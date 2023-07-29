@@ -20,8 +20,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List(todos) { todo in
-                Text(todo.title)
+            List($todos) { $todo in
+                //using bindings as without it todo is a constant 
+                HStack{
+                    Image(systemName:
+                    todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                    .onTapGesture {
+                        todo.isCompleted.toggle()
+                    }
+                    Text(todo.title)
+                        .strikethrough(todo.isCompleted)
+                }
+
             }
             .navigationTitle("Todos")
         }
