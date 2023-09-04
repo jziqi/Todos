@@ -22,21 +22,25 @@ struct ContentView: View {
         NavigationStack {
             List($todos) { $todo in
                 //using bindings as without it todo is a constant
-                HStack{
-                    Image(systemName:
-                    todo.isCompleted ? "checkmark.circle.fill" : "circle")
-                    .onTapGesture {
-                        todo.isCompleted.toggle()
-                    }
-                    VStack(alignment: .leading) {
-                        Text(todo.title)
-                            .strikethrough(todo.isCompleted)
-                        if !todo.subtitle.isEmpty {
-                            Text(todo.subtitle)
-                                .font(.footnote)
-                                .foregroundColor(.gray)
+                NavigationLink {
+                    TodoDetailView(todo: todo)
+                } label: {
+                    HStack{
+                        Image(systemName:
+                        todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                        .onTapGesture {
+                            todo.isCompleted.toggle()
+                        }
+                        VStack(alignment: .leading) {
+                            Text(todo.title)
                                 .strikethrough(todo.isCompleted)
-                                
+                            if !todo.subtitle.isEmpty {
+                                Text(todo.subtitle)
+                                    .font(.footnote)
+                                    .foregroundColor(.gray)
+                                    .strikethrough(todo.isCompleted)
+                                    
+                            }
                         }
                     }
                 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D918234B2AA6039C0080365A /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918234A2AA6039C0080365A /* TodoDetailView.swift */; };
 		D99F2E932A74BAE20032EBD5 /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F2E922A74BAE20032EBD5 /* TodoAppApp.swift */; };
 		D99F2E952A74BAE20032EBD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F2E942A74BAE20032EBD5 /* ContentView.swift */; };
 		D99F2E972A74BAE40032EBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99F2E962A74BAE40032EBD5 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D918234A2AA6039C0080365A /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		D99F2E8F2A74BAE20032EBD5 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99F2E922A74BAE20032EBD5 /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
 		D99F2E942A74BAE20032EBD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				D99F2E922A74BAE20032EBD5 /* TodoAppApp.swift */,
 				D99F2E942A74BAE20032EBD5 /* ContentView.swift */,
+				D918234A2AA6039C0080365A /* TodoDetailView.swift */,
 				D99F2EA02A74BB050032EBD5 /* File.swift */,
 				D99F2E962A74BAE40032EBD5 /* Assets.xcassets */,
 				D99F2E982A74BAE40032EBD5 /* Preview Content */,
@@ -143,6 +146,7 @@
 				D99F2E952A74BAE20032EBD5 /* ContentView.swift in Sources */,
 				D99F2EA12A74BB050032EBD5 /* File.swift in Sources */,
 				D99F2E932A74BAE20032EBD5 /* TodoAppApp.swift in Sources */,
+				D918234B2AA6039C0080365A /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

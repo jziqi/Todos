@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct Todo: Identifiable {
+struct Todo: Identifiable { //when there is an identifiable, struct shld contain an id
     
     var id = UUID() // Universally Unique IDentifier
+    //generates random numbers
     var title: String
     var subtitle = ""
    // var subtitle: String?
